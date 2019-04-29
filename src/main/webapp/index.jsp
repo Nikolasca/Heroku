@@ -10,9 +10,11 @@
             <input type="text" name="uname" placeholder="uname"/>
             <input type="text" name="pass" placeholder="pass"/>
             <select name="type" 
-                    <option value="Administrador"></option>
-                <option value="Pasajero"></option>
-         <!--   <input type="text" name="type" placeholder="type"/>        --> 
+                <option value="Administrador">Administrador</option>
+                <option value="Pasajero">Pasajero</option>
+                <option value="Conductor">Conductor</option>
+            </select>
+            <!--   <input type="text" name="type" placeholder="type"/>        --> 
             <input type="submit" value="Registrar"/>
         </form>
     </body>
