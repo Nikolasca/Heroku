@@ -10,6 +10,7 @@
             <input type="text" name="uname" placeholder="uname"/>
             <input type="text" name="pass" placeholder="pass"/>
             <select name="type" 
+                    <option value="Seleccionar">Seleccionar</option>
                 <option value="Administrador">Administrador</option>
                 <option value="Pasajero">Pasajero</option>
                 <option value="Conductor">Conductor</option>
