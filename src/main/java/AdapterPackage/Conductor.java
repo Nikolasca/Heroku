@@ -43,7 +43,7 @@ public class Conductor extends Usuario {
         return factory;
     }
 
-    public void AñadirPago(FlyWeight i) {
+    public void AnadirPago(FlyWeight i) {
         this.factory.AgregarPago(i);
 
     }

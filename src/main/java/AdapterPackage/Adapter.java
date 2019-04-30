@@ -51,7 +51,7 @@ public class Adapter extends Usuario {
     }
 
     @Override
-    public void AñadirPago(FlyWeight i) {
+    public void AnadirPago(FlyWeight i) {
         this.factory.AgregarPago(i);
     }
 

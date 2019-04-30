@@ -44,7 +44,7 @@ public class Pasajero extends Usuario {
         return this.factory;
     }
 
-    public void AñadirPago(FlyWeight i) {
+    public void AnadirPago(FlyWeight i) {
         this.factory.AgregarPago(i);
     }
 
