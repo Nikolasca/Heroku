@@ -18,5 +18,6 @@
             <!--   <input type="text" name="type" placeholder="type"/>        --> 
             <input type="submit" value="Registrar"/>
         </form>
+        <a href="/Login.html" class="link">Login</a>
     </body>
 </html>
