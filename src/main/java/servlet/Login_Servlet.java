@@ -1,3 +1,5 @@
+package servlet;
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -9,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @WebServlet(
         name = "MyServlet", 
-        urlPatterns = {"/Registrar"}
+        urlPatterns = {"/Login"}
     )
 public class Login_Servlet extends HttpServlet {
 
@@ -19,9 +21,8 @@ public class Login_Servlet extends HttpServlet {
         ServletOutputStream out = resp.getOutputStream();
         String A = req.getParameter("uname");
         String B =req.getParameter("pass");
-        String C =req.getParameter("type");
 
-        out.write(A.getBytes());
+        out.write(B.getBytes());
         out.flush();
         out.close();
     }
