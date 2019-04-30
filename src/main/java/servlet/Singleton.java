@@ -5,10 +5,40 @@
  */
 package servlet;
 
+import AdapterPackage.Usuario;
+import java.util.ArrayList;
+
 /**
  *
  * @author nikolasca
  */
 public class Singleton {
+    private static ArrayList<Usuario> usuarios;
+    private static Singleton single;
+
+    public Singleton() {
+    }
+    
+    
+    
+    public static Singleton getSingle() {
+        if (single == null) {
+            single = new Singleton();
+        }
+        return single;
+    }
+
+    public static ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public static void setUsuarios(ArrayList<Usuario> usuarios) {
+        Singleton.usuarios = usuarios;
+    }
+    public void Add(Usuario user){
+   usuarios.add(user);
+    }
+    
     
 }
+

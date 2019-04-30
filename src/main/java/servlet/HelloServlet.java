@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
         urlPatterns = {"/Registrar"}
     )
 public class HelloServlet extends HttpServlet {
-    private final Singleton s = Singleton.getSingle();
+    private Singleton s = Singleton.getSingle();
   
 
     @Override
