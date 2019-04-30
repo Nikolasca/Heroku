@@ -17,6 +17,7 @@ public class Singleton {
     private static Singleton single;
 
     public Singleton() {
+        usuarios = new ArrayList();
     }
     
     
