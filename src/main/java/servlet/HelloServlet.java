@@ -1,6 +1,12 @@
 package servlet;
 
+import AdapterPackage.Adapter;
+import AdapterPackage.Administrador;
+import AdapterPackage.Conductor;
+import AdapterPackage.Pasajero;
+import AdapterPackage.Usuario;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -14,6 +20,8 @@ import javax.servlet.http.HttpServletRequest;
         urlPatterns = {"/Registrar"}
     )
 public class HelloServlet extends HttpServlet {
+    private final Singleton s = Singleton.getSingle();
+  
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -22,10 +30,30 @@ public class HelloServlet extends HttpServlet {
         String A = req.getParameter("uname");
         String B =req.getParameter("pass");
         String C =req.getParameter("type");
-
-        out.write(A.getBytes());
+       if(C.compareTo("Conductor")==0){
+       Usuario user =  new Conductor();
+         s.Add(user);
+        out.write("Conductor creado".getBytes());
         out.flush();
         out.close();
+       
+       }
+       else if(C.compareTo("Pasajero")==0){
+           Usuario user =  new Pasajero();
+           s.Add(user);
+           out.write("Pasajero creado".getBytes());
+           out.flush();
+        out.close();
+       }
+       else if(C.compareTo("Administrador")==0){
+           Usuario user =  new Adapter();
+             s.Add(user);
+           out.write("Adminstrador creado".getBytes());
+           out.flush();
+        out.close();
+       }
+
+        
     }
     
 }
