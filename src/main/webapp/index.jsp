@@ -6,26 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-        <form action="Registrar" method="get">  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="uname">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass">
-  </div>
-  <div class="form-check">
-    <select name="type" 
-                    <option value="Seleccionar">Seleccionar</option>
-                <option value="Administrador">Administrador</option>
-                <option value="Pasajero">Pasajero</option>
-                <option value="Conductor">Conductor</option>
-            </select>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+
+        <form action="Registrar" method="get">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="uname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="pass">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Tipo de cuenta</legend>
+                    <div class="col-sm-10">
+
+                    </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Tipo</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <select name="type" 
+                                <option value="Seleccionar">Seleccionar</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Pasajero">Pasajero</option>
+                            <option value="Conductor">Conductor</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+</form>
   
   
         <div>TODO write content</div>
