@@ -33,37 +33,35 @@ public class HelloServlet extends HttpServlet {
         String A = req.getParameter("uname");
         String B =req.getParameter("pass");
         String C =req.getParameter("type");
-       if(C.compareTo("Conductor")==0){
-       Usuario user =  new Conductor();
-       user.setId(s.getUsuarios().size()+1);
-           user.setTipo_Usuario(C);
-           user.setUsuario(A);
-           user.setPassword(B);
-         s.Add(user);
-         req.setAttribute("usuario",user );
-          rd = req.getRequestDispatcher("/index.jsp");
-           rd.forward(req, resp);
+     
         
-       
-       }
-       else if(C.compareTo("Pasajero")==0){
-           Usuario user =  new Pasajero();
-           user.setId(s.getUsuarios().size()+1);
-           user.setTipo_Usuario(C);
-           user.setUsuario(A);
-           user.setPassword(B);
-           s.Add(user);
-       }
-       else if(C.compareTo("Administrador")==0){
-           Usuario user =  new Adapter();
-           user.setId(s.getUsuarios().size()+1);
-           user.setTipo_Usuario(C);
-           user.setUsuario(A);
-           user.setPassword(B);
-             s.Add(user);
-       }
+        if (C.compareTo("Conductor") == 0) {
+            Usuario user = new Conductor();
+            user.setId(s.getUsuarios().size() + 1);
+            user.setTipo_Usuario(C);
+            user.setUsuario(A);
+            user.setPassword(B);
+            s.Add(user);
+            req.setAttribute("usuario", user);
+            rd = req.getRequestDispatcher("/index.html");
+            rd.forward(req, resp);
 
-        
+        } else if (C.compareTo("Pasajero") == 0) {
+            Usuario user = new Pasajero();
+            user.setId(s.getUsuarios().size() + 1);
+            user.setTipo_Usuario(C);
+            user.setUsuario(A);
+            user.setPassword(B);
+            s.Add(user);
+        } else if (C.compareTo("Administrador") == 0) {
+            Usuario user = new Adapter();
+            user.setId(s.getUsuarios().size() + 1);
+            user.setTipo_Usuario(C);
+            user.setUsuario(A);
+            user.setPassword(B);
+            s.Add(user);
+        }
+
     }
-    
+
 }
