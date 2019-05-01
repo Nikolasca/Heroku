@@ -36,7 +36,7 @@
                     <div class="form-group row">
                         <div class="col-sm-10">
                             <button type="submit" class="btn btn-primary">Sign up</button>
-                            <a class="btn btn-primary btn-lg" href="/Login.html" role="button">Login</a>
+                            <a class="btn btn-primary" href="/Login.html" role="button">Login</a>
                         </div>
                     </div>
 </form>
