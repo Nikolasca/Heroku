@@ -19,6 +19,7 @@
 
     <body>
        <p>Nombre: ${usuario.usuario}</p>
+       <p>Tipo de Cuenta: ${usuario.tipo_Usuario}</p>
      
                 
     </body>
