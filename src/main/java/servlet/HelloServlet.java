@@ -29,7 +29,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         RequestDispatcher rd;
-        ServletOutputStream out = resp.getOutputStream();
+        //ServletOutputStream out = resp.getOutputStream();
         String A = req.getParameter("uname");
         String B =req.getParameter("pass");
         String C =req.getParameter("type");
@@ -41,8 +41,8 @@ public class HelloServlet extends HttpServlet {
            user.setPassword(B);
          s.Add(user);
          req.setAttribute("usuario",user );
-                            rd = req.getRequestDispatcher("/index.jsp");
-                            rd.forward(req, resp);
+          rd = req.getRequestDispatcher("/index.jsp");
+           rd.forward(req, resp);
         
        
        }
