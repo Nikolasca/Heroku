@@ -43,7 +43,7 @@ public class HelloServlet extends HttpServlet {
             user.setPassword(B);
             s.Add(user);
             req.setAttribute("usuario", user);
-            rd = req.getRequestDispatcher("/index.html");
+            rd = req.getRequestDispatcher("/Perfil.jsp");
             rd.forward(req, resp);
 
         } else if (C.compareTo("Pasajero") == 0) {
