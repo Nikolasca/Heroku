@@ -5,8 +5,10 @@ import AdapterPackage.Administrador;
 import AdapterPackage.Conductor;
 import AdapterPackage.Pasajero;
 import AdapterPackage.Usuario;
+import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
 import java.util.ArrayList;
+import javax.servlet.RequestDispatcher;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -21,7 +23,7 @@ import javax.servlet.http.HttpServletRequest;
     )
 public class HelloServlet extends HttpServlet {
     private Singleton s = Singleton.getSingle();
-  
+    RequestDispatcher rd;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -37,6 +39,9 @@ public class HelloServlet extends HttpServlet {
            user.setUsuario(A);
            user.setPassword(B);
          s.Add(user);
+         req.setAttribute("usuario",user );
+                            rd = req.getRequestDispatcher("/index.jsp");
+                            rd.forward(req, resp);
         out.write("Conductor creado ".getBytes());
         out.write(user.getUsuario().getBytes());
         out.flush();
