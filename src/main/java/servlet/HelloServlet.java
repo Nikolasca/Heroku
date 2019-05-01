@@ -42,10 +42,7 @@ public class HelloServlet extends HttpServlet {
          req.setAttribute("usuario",user );
                             rd = req.getRequestDispatcher("/index.jsp");
                             rd.forward(req, resp);
-        out.write("Conductor creado ".getBytes());
-        out.write(user.getUsuario().getBytes());
-        out.flush();
-        out.close();
+        
        
        }
        else if(C.compareTo("Pasajero")==0){
