@@ -17,8 +17,8 @@
                 <option value="Pasajero">Pasajero</option>
                 <option value="Conductor">Conductor</option>
             </select>
-            </div>        --> 
-            <input type="submit"  class="btn btn-default"  value="Registrar"/>
+            </div>
+            <button type="submit"  class="btn btn-default"  value="Registrar">Registrar</button>
             
         </form>
         <a href="/Login.html" class="link">Login</a>
