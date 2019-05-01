@@ -43,8 +43,6 @@ public class Login_Servlet extends HttpServlet {
             
 
         }
-
-        out.write(B.getBytes());
         out.flush();
         out.close();
     }
