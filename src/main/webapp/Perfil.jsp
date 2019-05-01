@@ -169,10 +169,5 @@
                 </div>
             </form>           
         </div>
-        <p>Nombre: ${usuario.usuario}</p>
-        <p>Tipo de Cuenta: ${usuario.tipo_Usuario}</p>
-        <a href="/Login.html" class="link">Login</a>
-
-
     </body>
 </html>
