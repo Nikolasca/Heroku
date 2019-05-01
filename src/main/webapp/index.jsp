@@ -31,28 +31,13 @@
                             <option value="Conductor">Conductor</option>
                         </select>
                     </div>
+                    </div>
+                    </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                            <a class="btn btn-primary btn-lg" href="/Login.html" role="button">Login</a>
                         </div>
                     </div>
 </form>
-  
-  
-        <div>TODO write content</div>
-        <form action="Registrar" method="get">
-            <div class="form-group">
-            <input type="text" name="uname" placeholder="uname"/>
-            <input type="text" name="pass" placeholder="pass"/>
-            <select name="type" 
-                    <option value="Seleccionar">Seleccionar</option>
-                <option value="Administrador">Administrador</option>
-                <option value="Pasajero">Pasajero</option>
-                <option value="Conductor">Conductor</option>
-            </select>
-            </div>
-            <button type="submit" class="btn btn-default navbar-btn">Registrar</button>
-        </form>
-        <a class="btn btn-primary btn-lg" href="/Login.html" role="button">Login</a>
-    </body>
 </html>
