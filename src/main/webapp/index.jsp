@@ -18,8 +18,7 @@
                 <option value="Conductor">Conductor</option>
             </select>
             </div>
-            <button type="submit" class="btn btn-default">Registrar</button>
-            
+            <button type="button" class="btn btn-default navbar-btn">Registrar</button>
         </form>
         <a href="/Login.html" class="link">Login</a>
     </body>
