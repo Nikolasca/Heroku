@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Registro</title>
         <meta charset="windows-1252">
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
