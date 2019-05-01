@@ -3,11 +3,8 @@
     Created on : 30/04/2019, 09:30:34 PM
     Author     : nikolasca
 --%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<%@page contentType="text/html" pageEncoding="windows-1252"%>
-
-<%@taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
-<%@taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
@@ -16,10 +13,11 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
-            <title>JSP Page</title>
+            <title>Mensaje Op</title>
         </head>
         <body>
-            <h1><h:outputText value="Hello World!"/></h1>
+            <h1>${mensaje}</h1>
+             <a href="/Login.html" class="link">Login</a>
         </body>
     </html>
 </f:view>

@@ -42,8 +42,9 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
-            req.setAttribute("usuario", user);
-            rd = req.getRequestDispatcher("/Perfil.jsp");
+            String mensaje = "Conductor Creado";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
 
         } else if (C.compareTo("Pasajero") == 0) {
@@ -53,8 +54,9 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
-            req.setAttribute("usuario", user);
-            rd = req.getRequestDispatcher("/Perfil.jsp");
+            String mensaje = "Pasajero Creado";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
         } else if (C.compareTo("Administrador") == 0) {
             Usuario user = new Adapter();
@@ -63,8 +65,9 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
-            req.setAttribute("usuario", user);
-            rd = req.getRequestDispatcher("/Perfil.jsp");
+            String mensaje = "Pasajero Creado";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
         }
 
