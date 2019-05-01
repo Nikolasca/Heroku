@@ -35,7 +35,7 @@ public class Login_Servlet extends HttpServlet {
                 rd = req.getRequestDispatcher("/Perfil.jsp");
                 rd.forward(req, resp);
             }
-            if (x == false) {
+            if (x == true) {
                 String mensaje = "No se encontró usuario";
                 req.setAttribute("mensaje", mensaje);
                 rd = req.getRequestDispatcher("/Prueba.jsp");
