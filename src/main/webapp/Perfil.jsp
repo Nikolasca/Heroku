@@ -18,8 +18,8 @@
     </head>
 
     <body>
-       <p>Nombre: ${usuario.getTipo_Usuario}</p>
-       <p>: ${usuario.getUsuario}</p>
+       <p>Nombre: ${usuario.usuario}</p>
+     
                 
     </body>
 </html>

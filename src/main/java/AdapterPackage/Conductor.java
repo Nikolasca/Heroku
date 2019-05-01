@@ -16,6 +16,7 @@ public class Conductor extends Usuario {
 
     private FlyWeightFactory factory;
     private String tipo = "Conductor";
+    private String nombre;
 
     public Conductor(String Usuario, String Password, int ID) {
         super(Usuario, Password,ID);
@@ -54,6 +55,23 @@ public class Conductor extends Usuario {
     @Override
     public String getPagos(String nombreC) {
          return this.factory.toStringPagosConductor(nombreC);
+         
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     

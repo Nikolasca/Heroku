@@ -16,13 +16,13 @@ import Flyweight.FlyWeightFactory;
  */
 public abstract class Usuario {
 
-    private String Usuario;
+    private String usuario;
     private String Password;
     private String Tipo_Usuario;
     private int id;
 
     public Usuario(String Usuario, String Password,int id) {
-        this.Usuario = Usuario;
+        this.usuario = Usuario;
         this.Password = Password;
         this.id = id;
     }
@@ -36,11 +36,11 @@ public abstract class Usuario {
    //public abstract void setPassword(String Password);
   // public abstract void setTipo_Usuario(String Tipo_Usuario);
     public String getUsuario() {
-        return Usuario;
+        return usuario;
     }
 
     public void setUsuario(String Usuario) {
-        this.Usuario = Usuario;
+        this.usuario = Usuario;
     }
 
     public String getPassword() {
