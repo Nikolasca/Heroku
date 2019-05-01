@@ -22,7 +22,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-2">Tipo de Cuenta</div>
-                <div class="col-sm-11">
+                <div class="col-sm-10">
                     <div class="form-check">
                         <select name="type" 
                                 <option value="Seleccionar">Seleccionar</option>
