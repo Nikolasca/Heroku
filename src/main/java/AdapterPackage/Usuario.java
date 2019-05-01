@@ -15,37 +15,26 @@ import Flyweight.FlyWeightFactory;
  * @author Nikolas
  */
 public abstract class Usuario {
+
     private String Usuario;
     private String Password;
     private String Tipo_Usuario;
+    private int id;
 
-  
-
-    public Usuario(String Usuario, String Password) {
+    public Usuario(String Usuario, String Password,int id) {
         this.Usuario = Usuario;
         this.Password = Password;
+        this.id = id;
     }
 
     public Usuario() {
     }
 
-  
-
-    
-    
-
-
-
    // public abstract String getUsuario();
-
    // public abstract void setUsuario(String Usuario); 
-
    //public abstract String getPassword();
-
    //public abstract void setPassword(String Password);
-
   // public abstract void setTipo_Usuario(String Tipo_Usuario);
-
     public String getUsuario() {
         return Usuario;
     }
@@ -69,12 +58,23 @@ public abstract class Usuario {
     public void setTipo_Usuario(String Tipo_Usuario) {
         this.Tipo_Usuario = Tipo_Usuario;
     }
-    
+
     public abstract String Permisos();
 
-   public abstract FlyWeightFactory getFactory();
-   
+    public abstract FlyWeightFactory getFactory();
+
     public abstract void AnadirPago(FlyWeight i);
+
     public abstract String getPago(int id);
+
     public abstract String getPagos(String nombre);
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }

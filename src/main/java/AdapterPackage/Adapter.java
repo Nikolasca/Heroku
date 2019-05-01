@@ -18,8 +18,8 @@ public class Adapter extends Usuario {
     private Administrador admin;
     private FlyWeightFactory factory;
 
-    public Adapter(String Usuario, String Password) {
-        super(Usuario, Password);
+    public Adapter(String Usuario, String Password, int id) {
+        super(Usuario, Password, id);
         this.admin = new Administrador();
     }
 

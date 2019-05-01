@@ -36,10 +36,24 @@ public class Singleton {
     public static void setUsuarios(ArrayList<Usuario> usuarios) {
         Singleton.usuarios = usuarios;
     }
-    public void Add(Usuario user){
-   usuarios.add(user);
+
+    public void Add(Usuario user) {
+        usuarios.add(user);
     }
-    
-    
+
+    public Usuario getById(int id) {
+        Usuario user = null;
+
+        for (Usuario usuario : usuarios) {
+            if (id == usuario.getId()) {
+                user = usuario;
+
+            }
+
+        }
+        return user;
+    }
+
+
 }
 

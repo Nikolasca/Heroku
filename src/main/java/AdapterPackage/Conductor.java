@@ -15,12 +15,10 @@ import Flyweight.FlyWeightFactory;
 public class Conductor extends Usuario {
 
     private FlyWeightFactory factory;
-    private String Usuario;
-    private String Password;
     private String tipo = "Conductor";
 
-    public Conductor(String Usuario, String Password) {
-        super(Usuario, Password);
+    public Conductor(String Usuario, String Password, int ID) {
+        super(Usuario, Password,ID);
         FlyWeightFactory factory = new FlyWeightFactory();
     }
 
