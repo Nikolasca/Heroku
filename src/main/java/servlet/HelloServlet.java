@@ -37,7 +37,8 @@ public class HelloServlet extends HttpServlet {
            user.setUsuario(A);
            user.setPassword(B);
          s.Add(user);
-        out.write("Conductor creado".getBytes());
+        out.write("Conductor creado ".getBytes());
+        out.write(user.getUsuario().getBytes());
         out.flush();
         out.close();
        
@@ -49,7 +50,8 @@ public class HelloServlet extends HttpServlet {
            user.setUsuario(A);
            user.setPassword(B);
            s.Add(user);
-           out.write("Pasajero creado".getBytes());
+           out.write("Pasajero creado ".getBytes());
+           out.write(user.getUsuario().getBytes());
            out.flush();
         out.close();
        }
