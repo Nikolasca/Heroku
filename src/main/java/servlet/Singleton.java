@@ -29,7 +29,7 @@ public class Singleton {
         return single;
     }
 
-    public static ArrayList<Usuario> getUsuarios() {
+    public  ArrayList<Usuario> getUsuarios() {
         return usuarios;
     }
 
