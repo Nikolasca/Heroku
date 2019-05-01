@@ -23,11 +23,12 @@ import javax.servlet.http.HttpServletRequest;
     )
 public class HelloServlet extends HttpServlet {
     private Singleton s = Singleton.getSingle();
-    RequestDispatcher rd;
+    
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        RequestDispatcher rd;
         ServletOutputStream out = resp.getOutputStream();
         String A = req.getParameter("uname");
         String B =req.getParameter("pass");
