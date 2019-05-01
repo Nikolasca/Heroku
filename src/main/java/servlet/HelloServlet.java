@@ -53,6 +53,9 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
+            req.setAttribute("usuario", user);
+            rd = req.getRequestDispatcher("/Perfil.jsp");
+            rd.forward(req, resp);
         } else if (C.compareTo("Administrador") == 0) {
             Usuario user = new Adapter();
             user.setId(s.getUsuarios().size() + 1);
@@ -60,6 +63,9 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
+            req.setAttribute("usuario", user);
+            rd = req.getRequestDispatcher("/Perfil.jsp");
+            rd.forward(req, resp);
         }
 
     }
