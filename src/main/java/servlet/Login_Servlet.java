@@ -10,7 +10,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
- import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
         name = "ServletLogin",
@@ -35,14 +35,13 @@ public class Login_Servlet extends HttpServlet {
                 rd = req.getRequestDispatcher("/Perfil.jsp");
                 rd.forward(req, resp);
             }
-           
 
-            }
-         if (x == false) {
-                String mensaje = "No se encontró usuario";
-                req.setAttribute("mensaje", mensaje);
-                rd = req.getRequestDispatcher("/Prueba.jsp");
-                rd.forward(req, resp);
+        }
+        if (x == false) {
+            String mensaje = "No se encontró usuario";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
 
         }
 

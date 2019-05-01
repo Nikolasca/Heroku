@@ -65,7 +65,7 @@ public class HelloServlet extends HttpServlet {
             user.setUsuario(A);
             user.setPassword(B);
             s.Add(user);
-            String mensaje = "Pasajero Creado";
+            String mensaje = "Administrador Creado";
             req.setAttribute("mensaje", mensaje);
             rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
