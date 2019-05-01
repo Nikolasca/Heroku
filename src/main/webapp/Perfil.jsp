@@ -37,10 +37,10 @@
                     <div class="col-md-6">
                         <div class="profile-head">
                                     <h5>
-                                        Kshiti Ghelani
+                                        ${usuario.usuario}
                                     </h5>
                                     <h6>
-                                        Web Developer and Designer
+                                        ${usuario.tipo_Usuario}
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -80,7 +80,7 @@
                                                 <label>User Id</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti123</p>
+                                                <p>${usuario.usuario}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -88,7 +88,7 @@
                                                 <label>Name</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
+                                                <p>${usuario.usuario}</p>
                                             </div>
                                         </div>
                                         <div class="row">
