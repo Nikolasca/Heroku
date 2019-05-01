@@ -2,7 +2,7 @@
     <head>
         <title>TODO supply a title</title>
         <meta charset="windows-1252">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
