@@ -22,7 +22,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-2">Tipo de Cuenta</div>
-                <div class="col-sm-10">
+                <div class="col-sm-9">
                     <div class="form-check">
                         <select name="type" 
                                 <option value="Seleccionar">Seleccionar</option>
@@ -31,13 +31,13 @@
                             <option value="Conductor">Conductor</option>
                         </select>
                     </div>
-                    </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign up</button>
-                            <a class="btn btn-primary" href="/Login.html" role="button">Login</a>
-                        </div>
-                    </div>
-</form>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                    <a class="btn btn-primary" href="/Login.html" role="button">Login</a>
+                </div>
+            </div>
+        </form>
 </html>
