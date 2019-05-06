@@ -19,7 +19,7 @@ public class ReservaGrupo {
         this.componentes = new ArrayList<Reserva>();;
     }
     
-    public void AñadirGrupito(Reserva r) {
+    public void AnadirGrupito(Reserva r) {
         this.componentes.add(r);
     }
     

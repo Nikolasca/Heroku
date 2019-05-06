@@ -45,7 +45,7 @@ public class Facade {
 
     public void CrearReserva(String nombre, String id, String fecha, String concepto, String lugar) {
         Reserva reserva = new Reserva(nombre, id, fecha, concepto, lugar);
-        G2.AñadirGrupito(reserva);
+        G2.AnadirGrupito(reserva);
     }
 
     public void EliminarReserva(Reserva r) {
@@ -66,7 +66,7 @@ public class Facade {
 
     public void CrearPago(String nombre, String id, int pago, String fecha, String concepto) {
         Pago pago1 = new Pago(nombre, id, pago, fecha, concepto);
-        G1.AñaadirGrupito(pago1);
+        G1.AnadirGrupito(pago1);
     }
 
     public void EliminarPago(Pago r) {
@@ -326,14 +326,14 @@ public class Facade {
 
     public composite crearAgrupacion(String NombreGrupo) {
         composite grupo = new composite(NombreGrupo);
-        GrupoBase.Añadir(grupo);
+        GrupoBase.Anadir(grupo);
         return grupo;
 
     }
 
     public composite crearAgrupacion(String NombreGrupo, int id) {
         composite grupo = new composite(NombreGrupo, id);
-        GrupoBase.Añadir(grupo);
+        GrupoBase.Anadir(grupo);
         return grupo;
 
     }
@@ -351,7 +351,7 @@ public class Facade {
     }
 
     public void AgregarElemento(interfaceGrupo componente) {
-        this.GrupoBase.Añadir(componente);
+        this.GrupoBase.Anadir(componente);
 
     }
 

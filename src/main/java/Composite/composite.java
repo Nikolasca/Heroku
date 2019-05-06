@@ -56,7 +56,7 @@ public class composite implements interfaceGrupo {
         return this.componentes;
     }
 
-    public void Añadir(interfaceGrupo componente) {
+    public void Anadir(interfaceGrupo componente) {
         this.getComponentes().add(componente);
 
     }

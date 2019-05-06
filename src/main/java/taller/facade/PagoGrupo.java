@@ -19,7 +19,7 @@ public class PagoGrupo {
         this.componentes = new ArrayList<Pago>();;
     }
 
-    public void AñaadirGrupito(Pago r) {
+    public void AnadirGrupito(Pago r) {
         this.componentes.add(r);
     }
 
