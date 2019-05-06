@@ -27,6 +27,11 @@ public abstract class Usuario {
         this.id = id;
     }
 
+    public Usuario(String usuario, String password) {
+        this.usuario = usuario;
+        this.password = password;
+    }
+
     public Usuario() {
     }
 

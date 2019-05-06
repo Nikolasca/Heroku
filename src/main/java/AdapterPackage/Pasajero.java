@@ -26,6 +26,10 @@ public class Pasajero extends Usuario {
         super();
     }
 
+    public Pasajero(String usuario, String password) {
+        super(usuario, password);
+    }
+
     
     @Override
     public String getTipo_Usuario() {

@@ -27,6 +27,11 @@ public class Conductor extends Usuario {
         super();
     }
 
+    public Conductor(String usuario, String password) {
+        super(usuario, password);
+    }
+    
+
 
     @Override
     public String getTipo_Usuario() {

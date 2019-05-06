@@ -23,6 +23,13 @@ public class Adapter extends Usuario {
         this.admin = new Administrador();
     }
 
+    public Adapter(String usuario, String password) {
+        super(usuario, password);
+    }
+
+    
+    
+
     public Adapter() {
         super();
         this.admin = new Administrador();
