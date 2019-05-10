@@ -27,6 +27,19 @@ public class Login_Servlet extends HttpServlet {
         String A = req.getParameter("uname");
         String B = req.getParameter("pass");
         ArrayList<Usuario> usuarios = s.getUsuarios();
+        
+        if (A.isEmpty()) {
+           String mensaje = "No se ingresó usuario";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
+        } else if (B.isEmpty()) {
+           String mensaje = "No se ingresó contraseña";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
+        } 
+        
         boolean x = false;
         for (Usuario usuario : usuarios) {
             if ((usuario.getUsuario().compareTo(A) == 0) && (usuario.getPassword().compareTo(B) == 0)) {
@@ -42,7 +55,6 @@ public class Login_Servlet extends HttpServlet {
             req.setAttribute("mensaje", mensaje);
             rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
-
         }
 
     }

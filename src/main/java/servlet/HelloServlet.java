@@ -34,6 +34,22 @@ public class HelloServlet extends HttpServlet {
         String B =req.getParameter("pass");
         String C =req.getParameter("type");
      
+        if (A.isEmpty()) {
+           String mensaje = "No se ingresó usuario";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
+        } else if (B.isEmpty()) {
+           String mensaje = "No se ingresó contraseña";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
+        } else if (C.isEmpty()) {
+            String mensaje = "No se ingresó tipo";
+            req.setAttribute("mensaje", mensaje);
+            rd = req.getRequestDispatcher("/Prueba.jsp");
+            rd.forward(req, resp);
+        }
         
         if (C.compareTo("Conductor") == 0) {
             Usuario user = new Conductor();
@@ -46,7 +62,6 @@ public class HelloServlet extends HttpServlet {
             req.setAttribute("mensaje", mensaje);
             rd = req.getRequestDispatcher("/Prueba.jsp");
             rd.forward(req, resp);
-
         } else if (C.compareTo("Pasajero") == 0) {
             Usuario user = new Pasajero();
             user.setId(s.getUsuarios().size() + 1);
